@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Chat Support Demo</title>
+  <link rel="stylesheet" href="../static/css/chat-widget.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      color: #667eea;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: #764ba2;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #555;
+      font-size: 16px;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+      padding: 25px;
+      border-radius: 12px;
+      margin: 30px 0;
+      border-left: 4px solid #667eea;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .feature-card {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .tech-badge {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 40px 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 12px;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #667eea;
+      display: block;
+    }
+
+    .stat-label {
+      color: #666;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+
+    <h1>About Our AI Chat System</h1>
+
+    <div class="highlight">
+      <p><strong>Welcome to the future of customer support!</strong> Our AI-powered chat system combines cutting-edge
+        technology with seamless user experience to provide instant, intelligent responses to your questions.</p>
+    </div>
+
+    <h2>🚀 What Makes Us Different</h2>
+    <p>Our chat application isn't just another chatbot. It's a sophisticated AI assistant built with enterprise-grade
+      technology that learns, adapts, and provides meaningful conversations tailored to your needs.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🤖</span>
+        <h3>AI-Powered Responses</h3>
+        <p>Leveraging OpenAI's GPT models through Langflow to provide intelligent, context-aware responses that feel
+          natural and helpful.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💾</span>
+        <h3>Persistent History</h3>
+        <p>Every conversation is saved and can be retrieved, ensuring continuity and enabling better support over time.
+        </p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Real-Time Experience</h3>
+        <p>Instant responses with typing indicators and smooth animations that make conversations feel natural and
+          engaging.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📱</span>
+        <h3>Cross-Platform</h3>
+        <p>Works seamlessly across all devices and browsers, maintaining your conversation state wherever you go.</p>
+      </div>
+    </div>
+
+    <h2>🛠️ Technology Stack</h2>
+    <p>Built with modern, reliable technologies that ensure performance, scalability, and security:</p>
+
+    <div class="tech-stack">
+      <span class="tech-badge">Langflow</span>
+      <span class="tech-badge">OpenAI GPT</span>
+      <span class="tech-badge">Python Flask</span>
+      <span class="tech-badge">SQLite</span>
+      <span class="tech-badge">JavaScript ES6+</span>
+      <span class="tech-badge">HTML5 & CSS3</span>
+      <span class="tech-badge">RESTful APIs</span>
+    </div>
+
+    <h2>📊 System Performance</h2>
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number">&lt;2s</span>
+        <span class="stat-label">Avg Response Time</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">99.9%</span>
+        <span class="stat-label">Uptime Reliability</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Available Support</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Conversation History</span>
+      </div>
+    </div>
+
+    <h2>🔧 How It Works</h2>
+
+    <h3>1. User Input Processing</h3>
+    <p>When you type a message, our system processes it with multiple layers of validation to ensure optimal AI response
+      generation.</p>
+
+    <h3>2. AI Response Generation</h3>
+    <p>The message is sent to our AI models, which generate a context-aware response tailored to your query.</p>
+
+    <h3>3. Continuous Learning</h3>
+    <p>Our system continually updates its database with new interactions to improve future response accuracy.</p>
+  </div>
+</body>
+
+</html>
